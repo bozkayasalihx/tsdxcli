@@ -1,6 +1,6 @@
 // import cp from 'child_process';
-import fs from 'node:fs';
-import path from 'node:path';
+import fs from 'fs';
+import path from 'path';
 import readline from 'readline';
 
 type Color = 'yellow' | 'blue' | 'green' | 'cyan' | 'red' | 'magenta';
