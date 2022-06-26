@@ -1,6 +1,6 @@
 // import cp from 'child_process';
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
 import readline from 'readline';
 
 type Color = 'yellow' | 'blue' | 'green' | 'cyan' | 'red' | 'magenta';
@@ -190,7 +190,7 @@ class Select {
   }
 }
 
-const select = new Select({
+export const select = new Select({
   question: 'Choose type of configuration ?',
   options: ['Node', 'React', 'React Native'],
   answers: ['node', 'react', 'react_native'],
